@@ -2,11 +2,11 @@ package SolidPrinciple.InterfaceSeggregationPrinciple;
 
 public class Main {
     public static void main(String[] args) {
-        Waiter waiter = new Waiter();
-        Chef chef = new Chef();
+        VideoInterface video = new Video();
+        SoundSystemInterface sound = new Volume();
 
-        waiter.takeOrder();
-        chef.cookFood();
-        waiter.serveCustomer();
+        video.playVideo("VLC");
+        sound.setVolume(10);
+
     }
 }
