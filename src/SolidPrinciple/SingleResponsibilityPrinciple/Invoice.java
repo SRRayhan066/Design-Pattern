@@ -1,16 +1,16 @@
 package SolidPrinciple.SingleResponsibilityPrinciple;
 
 public class Invoice {
-    private Marker marker;
+    private Macbook macbook;
     private int quantity;
 
-    public Invoice(Marker marker,int quantity){
-        this.marker=marker;
+    public Invoice(Macbook mackbook,int quantity){
+        this.macbook=mackbook;
         this.quantity=quantity;
     }
 
     public int calculateTotal(){
-        int price=(marker.price*this.quantity);
+        int price=(macbook.price*this.quantity);
         return price;
     }
 }
